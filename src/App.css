@@ -1,0 +1,41 @@
+#app{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+.generator{
+    width: 40%;
+    max-width: 800px;
+    min-width: 300px;
+    aspect-ratio: 16/12;
+    background-color: rgb(19, 19, 19);
+}
+.savedPass{
+    max-height: 300px;
+    overflow: auto;
+}
+.savedPass::-webkit-scrollbar{
+    width: 6px;
+}
+.savedPass::-webkit-scrollbar-thumb{
+    background-color: rgb(50, 111, 202);
+    border-radius: 8px;
+}
+.savedPass li::-webkit-scrollbar{
+    height: 5px;
+}
+.savedPass li::-webkit-scrollbar-thumb{
+    background-color: rgb(50, 111, 202);
+}
+.copywrite{
+    position: fixed;
+    color: white;
+    bottom: 20px;
+    right: 20px;
+}
+@media only screen and (max-width:600px) {
+    .generator{
+        width: 95%;
+        min-width: none;
+    }
+}
